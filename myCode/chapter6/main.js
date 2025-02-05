@@ -1,7 +1,6 @@
-let myName = "LY";
+let myName = "LtthY";
 let sheepCounted = 0
 let myFamily = ["Siphosami", "Thando", "Thandeka"]
-
 
 
 if (myName.length > 5){
@@ -12,15 +11,15 @@ if (myName.length > 5){
     console.log("Add your initials")
 };
 
-// while (sheepCounted < 10){
-    // console.log("I have counted " + sheepCounted + " sheep!");
-    // sheepCounted++;
-// };
-// console.log("Zzzzzzzzzzz");
-
-for (var i=0; i<3; i++){
-    console.log("I have counted " + i + " sheep!");
+while (sheepCounted < 10){
+    console.log("I have counted " + sheepCounted + " sheep!");
+    sheepCounted++;
 };
+console.log("Zzzzzzzzzzz");
+
+// for (var i=0; i<3; i++){
+    // console.log("I have counted " + i + " sheep!");
+// };
 
 for (var i=0; i< myFamily.length; i++){
     console.log("This is my family member " + myFamily[i]);
