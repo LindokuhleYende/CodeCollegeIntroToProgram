@@ -9,3 +9,8 @@ console.log(i + " " + whatToDraw);
 }
 };
 printMultipleTimes(5, "=^.^=")
+
+function add(a,b){
+    return a + b
+};
+add(8,5)
