@@ -3,7 +3,8 @@ body {
 }
 
 p {
-    font-size: 1em;
+    font-size:large;
+    font-weight: bold;
 }
 
 .eye {
@@ -14,7 +15,7 @@ p {
 }
 
 .arm {
-    background-color: #cacaca;
+    background-color: #96f40a;
     position: absolute;
     top: 35%;
     width: 5%;
@@ -32,14 +33,14 @@ p {
 }
 
 #righteye {
-    background-color: bisque;
+    background-color: rgb(75, 133, 73);
     position: absolute;
     left: 20%;
     top: 10%;
 }
 
 #lefteye {
-    background-color: aquamarine;
+    background-color: brown;
     position: absolute;
     left: 55%;
     top: 20%;
