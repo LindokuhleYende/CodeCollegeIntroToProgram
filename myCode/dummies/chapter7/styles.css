@@ -1,15 +1,24 @@
-eye {
-    background-color: blue;
+body {
+    font-family: Arial;
+}
+
+p {
+    font-size: large;
+    font-weight: bold;
+}
+
+.eye {
+    /* background-color: green; */
     width: 30%;
     height: 30%;
     border-radius: 50%;
 }
 
 .arm {
-    background-color: #cacaca;
+    background-color: #96f40a;
     position: absolute;
     top: 35%;
-    width: 3%;
+    width: 5%;
     height: 40%;
 }
 
@@ -24,15 +33,26 @@ eye {
 }
 
 #righteye {
+    background-color: rgb(75, 133, 73);
     position: absolute;
     left: 20%;
-    top: 20%;
+    top: 10%;
 }
 
 #lefteye {
+    background-color: brown;
     position: absolute;
-    left: 60%;
+    left: 55%;
     top: 20%;
+}
+
+#nose {
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    width: 10%;
+    height: 10%;
+    background-color: black;
 }
 
 #mouth {
@@ -57,27 +77,12 @@ eye {
 
 #rightarm {
     position: absolute;
-    left: 20%;
+    left: 21%;
 }
 
 #leftarm {
     position: absolute;
-    left: 70%;
-    width: 25%;
-    height: 5%;
+    right: 3%;
+    width: 27%;
+    height: 4%;
 }
-
-#nose {
-    position: absolute;
-    left: 45%;
-    top: 50%;
-    width: 10%;
-    height: 10%;
-    background-color: black;
-  }
-body {
-    font-family: "Comic Sans MS", cursive, sans-serif;
-  }
-p {
-    font-size: 3em;
-  }
