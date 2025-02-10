@@ -48,7 +48,6 @@ function calculateIt() {
  
         if (radios[i].checked) { //Tests if the current radio button (radios[i]) is selected.
             myOperator = radios[i].value; //If selected, assigns its value to the myOperator variable.
-            
             //do a different operation depending on which operator was selected
             switch (radios[i].value) {
                 case "+":
@@ -103,6 +102,7 @@ function calculateIt() {
     //display the operation
     if (typeof(operand1)==="string"){
         operand1 = '"' + operand1 + '"'; 
+        console.log("Hello")
     }
     if (typeof(operand2)==="string"){
         operand2 = '"' + operand2 + '"';
@@ -112,6 +112,7 @@ function calculateIt() {
     
     //display the return value
     document.getElementById("result").innerHTML = returnValue;
+    console.log("Hello")
 };
 
 // NB! line 106 is a string containing a single double quote ("). In JavaScript, to include a double quote in a string, you have to surround it with single quotes or escape it.
