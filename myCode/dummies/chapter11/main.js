@@ -9,3 +9,4 @@ var pet2 = "Chicken";
 var pet3 = "Rabit";
 
 var myAnimals = [pet1, pet2, pet3];
+console.log(family.concat(myAnimals));
