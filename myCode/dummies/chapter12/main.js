@@ -42,5 +42,5 @@ function stopTrain() {
 
 
 function remainder(a,b){
-    return a%b
+    return "The remainder of " + a + " divided by " + b+ " is " + a%b
 }
