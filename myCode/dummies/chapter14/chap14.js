@@ -9,6 +9,7 @@ produces output*/
 
 function placeOrder() {
     // get form values
+    var custName = document.getElementById("custName").value;
     var numPizzas = document.getElementById("numPizzas").value;
     var typePizza = document.getElementById("typePizza").value;
     var deliveryCity = document.getElementById("deliveryCity").value;
@@ -20,15 +21,15 @@ function placeOrder() {
     var deliveryPrice = calculateDelivery(orderPrice, deliveryCity, birthday);
 
     // create the output
-    var theOutput = "<p>Thank you for your order.</p>";
+    var theOutput = "<span>Thank you for your order </span>" +custName.toUpperCase();
 
     // output the delivery price, if there is one
     if (deliveryPrice === 0) {
         theOutput += "<p>You get free delivery!</p>";
     } else {
-        theOutput += "<p>Your delivery cost is: $" + deliveryPrice;
+        theOutput += "<p>Your delivery cost is: $" + deliveryPrice + "</p>";
     }
-    theOutput += "<p>Your total is: $" + (orderPrice + deliveryPrice);
+    theOutput += "<p>Your total is: $" + (orderPrice + deliveryPrice)+"</p>";
 
     // display the output
     document.getElementById("displayTotal").innerHTML = theOutput;
