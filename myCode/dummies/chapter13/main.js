@@ -25,7 +25,7 @@ function addToTheList(thingToAdd) {
     newListItem.innerHTML = myList[myList.length - 1];
 
     myListArea.appendChild(newListItem);
-
+    console.log(myList);
 }
 
 function resetInput(inputToReset) {
