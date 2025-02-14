@@ -14,8 +14,8 @@ var lunches = 0;
 document.getElementById("money").innerHTML = money;
 
 //listen for order
-orderButton = document.getElementById("placeOrder");
-orderButton.addEventListener("click", buyLunches);
+// orderButton = document.getElementById("placeOrder");
+// orderButton.addEventListener("click", buyLunches);
 
 document.getElementById("placeOrder").addEventListener("click", buyLunches);
 
@@ -51,7 +51,7 @@ function buyLunches() {
 //gets the current price of sandwiches
 
 function getSandwichPrice() {
-    var sandwichPrice = (Math.random() (1 - 0) + 1).toFixed(2);
+    var sandwichPrice = (Math.random() *(1 - 0) + 1).toFixed(2);
     return sandwichPrice;
 }
 
