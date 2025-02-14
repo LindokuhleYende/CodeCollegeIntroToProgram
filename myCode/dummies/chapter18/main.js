@@ -24,9 +24,11 @@ document.getElementById("placeOrder").addEventListener("click", buyLunches);
 
 function buyLunches() {
     resetForm();
-    var day = 0;
-    while (money > 0) {
-        day++;
+    var i = 0;
+    var day = ["Monday", "Tuesday", "Wednesday", "Thursay", "Friday", "Saturday"];
+    while (money > 0 && i< day.length) {
+        //day++;
+    
         var priceToday = getSandwichPrice();
         var numberOfSandwiches = document.getElementById("numSandwiches").value;
         var totalPrice = priceToday * numberOfSandwiches;
@@ -35,8 +37,12 @@ function buyLunches() {
         if (money >= totalPrice) {
             money = money - totalPrice;
             lunches++;
-            document.getElementById("receipt").innerHTML += "<p>On day " + day + ", sandwiches are: $" + priceToday + ". You have $" + money.toFixed(2) + " left.</p>";
+            // for (let i = 0; i<day.length; i++){
+                // document.getElementById("receipt").innerHTML += "<p>On day " + day[i] + ", sandwiches are: $" + priceToday + ". You have $" + money.toFixed(2) + " left.</p>";
 
+            // }
+            document.getElementById("receipt").innerHTML += "<p>On day " + day[i] + ", sandwiches are: $" + priceToday + ". You have $" + money.toFixed(2) + " left.</p>";
+            i++;
         } else {
             document.getElementById("receipt").innerHTML += "<p>Today, sandwiches are: $" + priceToday + ". You don't have enough money. Maybe your sister will give you some of her sandwich.</p>";
             money = 0;
