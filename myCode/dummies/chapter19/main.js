@@ -14,6 +14,8 @@ var lemonadeCost = 0.5;
 // array for storing daily temps
 var dailyTemp = [];
 
+//initialize the global variable for the profit
+var profit;
 // listen for order
 document.getElementById("OpenTheStand").addEventListener("click", openTheStand);
 
@@ -74,7 +76,7 @@ function openTheStand() {
     displayResults(numGlasses, glassPrice, totalGlasses);
 
 }
-var profit;
+
 /**
 calculates results and displays a report
 **/
@@ -100,6 +102,7 @@ function resetForm() {
 
 }
 
+//What is my sales button ptints my ptofit on the console upon clicking it
 document.getElementById("myData").addEventListener("click", myProfit);
 
 function myProfit(){
