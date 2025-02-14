@@ -106,5 +106,5 @@ function resetForm() {
 document.getElementById("myData").addEventListener("click", myProfit);
 
 function myProfit(){
-    console.log(profit);
+    console.log("The Total profit was "+profit);
 }
