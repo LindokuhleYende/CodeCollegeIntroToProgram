@@ -14,9 +14,19 @@ function add_selection(x) {
     display_all();
 }
 
+function remove_selection(x) {
+    if (quantities[x] > 0) {
+        totalOrderAmt -= prices[x];
+        quantities[x]--;
+        totals[x] = prices[x] * quantities[x];
+        display_all();
+    }
+}
 
- 
-
+function checkout(){
+    var checkoutTotal = totalOrderAmt.toFixed(2);
+    document.getElementById("checkoutTotal").innerHTML = "Total Order Amount: " + checkoutTotal;
+}
 
 function display_all() {
 
@@ -28,7 +38,7 @@ function display_all() {
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Quantity</th>";
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Total</th>";
     myTable += "<th style='width: 100px; color: red; text-align: right;'>Add</th>";
-    myTable += "<th style='width: 100px; color: red; text-align: right;'>Add</th>";
+    myTable += "<th style='width: 100px; color: red; text-align: right;'>Remove</th>";
 
     for (i = 0; i < items.length; i++) {
         myTable += "<tr><td style='width: 100px; text-align: right;'>" + nums[i] + "</td>";
@@ -37,12 +47,13 @@ function display_all() {
         myTable += "<td style='width: 100px; text-align: right;'>" + quantities[i] + "</td>";
         myTable += "<td style='width: 100px; text-align: right;'>" + totals[i] + "</td>";
         myTable += "<td><button onclick='add_selection(" + i + ")'>Add</button></td>";
-        myTable += "<td><button onclick='add_selection(" + i + ")'>Add</button></td>";
+        myTable += "<td><button onclick='remove_selection(" + i + ")'>Remove</button></td>";
     }
 
     myTable += "</table>";
-    // myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
-
+    //myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
+    myTable += "<br/><br/><button onclick='checkout()'>Checkout</button>";
+    myTable += "<p id='checkoutTotal'></p>";
 
 
     // document.write(myTable);
