@@ -14,3 +14,18 @@ th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+body{
+    background-color: rgb(139, 115, 22);
+}
+
+h1{
+    text-align: center;
+    color: blanchedalmond;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+}
