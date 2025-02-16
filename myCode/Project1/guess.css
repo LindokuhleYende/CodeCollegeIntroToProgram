@@ -1,0 +1,9 @@
+body{
+    background-image: url(pro1Src/guess.jpg);
+}
+
+h1{
+    text-align: center;
+    color: yellowgreen;
+    background-color: antiquewhite;
+}
