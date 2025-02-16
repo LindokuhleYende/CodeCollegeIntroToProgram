@@ -25,7 +25,7 @@ function remove_selection(x) {
 
 function checkout(){
     var checkoutTotal = totalOrderAmt.toFixed(2);
-    document.getElementById("checkoutTotal").innerHTML = "Total Order Amount: " + checkoutTotal;
+    document.getElementById("total").innerHTML = "Total Order Amount: " + checkoutTotal;
 }
 
 function display_all() {
@@ -46,14 +46,14 @@ function display_all() {
         myTable += "<td style='width: 100px; text-align: right;'>" + prices[i] + "</td>";
         myTable += "<td style='width: 100px; text-align: right;'>" + quantities[i] + "</td>";
         myTable += "<td style='width: 100px; text-align: right;'>" + totals[i] + "</td>";
-        myTable += "<td><button onclick='add_selection(" + i + ")'>Add</button></td>";
-        myTable += "<td><button onclick='remove_selection(" + i + ")'>Remove</button></td>";
+        myTable += "<td><button id='add' onclick='add_selection(" + i + ")'>Add</button></td>";
+        myTable += "<td><button id='remove' onclick='remove_selection(" + i + ")'>Remove</button></td>";
     }
 
     myTable += "</table>";
     //myTable += "<br/><br/><p>Total: " + totalOrderAmt + "</p>";
-    myTable += "<br/><br/><button onclick='checkout()'>Checkout</button>";
-    myTable += "<p id='checkoutTotal'></p>";
+    myTable += "<br/><br/><button id='checkoutTotal' onclick='checkout()'>Checkout</button>";
+    myTable += "<p id='total' ></p>";
 
 
     // document.write(myTable);

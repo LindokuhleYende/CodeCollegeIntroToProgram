@@ -29,3 +29,15 @@ h1{
     margin-right: auto;
     width: 200px;
 }
+
+#checkoutTotal{
+    background-color: darkseagreen;
+}
+
+#add{
+    background-color: darkviolet;
+}
+
+#remove{
+    background-color: darkred;
+}
