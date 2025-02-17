@@ -13,7 +13,7 @@ if (secret === guess){
 }
 
 while (guess !== secret){
-    if (guess<7){
+    if (guess< secret){
         alert("Incorrect, too low!");
     }else{
         alert("Incorrect, too high!");
